@@ -64,11 +64,12 @@ body {
 }
 
 .icon {
-    width: 100%;
+    width: 100px;
     height: 50%; /* Adjust height */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto; /* Center horizontally */
 }
 
 .icon img {
@@ -89,14 +90,4 @@ body {
     font-size: 1rem; /* Adjust font size */
 }
 
-.foot {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px; /* Adjust spacing */
-}
 
-.foot img {
-    width: 100%; /* Ensure image spans full width */
-    max-width: 100%;
-}
