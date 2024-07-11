@@ -10,7 +10,6 @@ body {
     min-height: 100vh;
     flex-direction: column;
     align-items: center;
-    font-family: 'Times New Roman', Times, serif;
     background: url(designer.png) no-repeat;
     background-size: cover;
     background-color: antiquewhite;
@@ -23,107 +22,81 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 30vh; /* Adjust height as per your design */
     z-index: 1;
-    
+    margin-top: 20px;
 }
-
 
 .heading, .second {
     margin: 0;
-    font-size: 75px;
+    font-size: 3rem; /* Adjust font size */
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    position: relative;
-    color: rgb(12, 17, 21);
-    top: 50px;
-    column-gap: 40px;
-    row-gap: 40px;
-    width: 1400px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 90%; /* Adjust width as needed */
+    max-width: 1400px; /* Limit max width */
 }
 
 .templates {
-    position: relative;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    height: 100px;
-    width: 300px;
-    border: none;
+    height: 180px; /* Adjust height */
     border-radius: 8px;
-    transition: 0.3s ease;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    overflow: hidden; /* Ensure images don't overflow */
 }
 
 .templates:hover {
-    transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
+    transform: scale(1.05); /* Slight scale on hover */
 }
 
 .grid img {
     width: 40px;
+    margin-top: 20px; /* Adjust spacing */
 }
 
 .icon {
-    width: 70px;
-    height: 100px;
+    width: 100%;
+    height: 50%; /* Adjust height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon img {
-    width: 40px;
-    position: relative;
-    top: 30px;
-    left: 20px;
-    background: transparent;
-    border: none;
-    border-radius: 25px;
+    width: 60%; /* Adjust image size */
 }
 
 .button-description {
-    position: relative;
-    bottom: 70px;
-    left: 100px;
-    width: 200px;
-    height: 40px;
+    text-align: center;
+    padding: 10px;
 }
 
 .button-description .head {
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-.button-description .details {
-    font-size: 15px;
+    font-size: 1.5rem; /* Adjust font size */
     font-weight: bold;
 }
 
+.button-description .details {
+    font-size: 1rem; /* Adjust font size */
+}
+
+.foot {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Adjust spacing */
+}
+
 .foot img {
-    position: absolute;
-    width: 300px;
-    top: 2000px;
-    right: 1200px;
-}
-
-@media (max-width: 400px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 500px) and (max-width: 799px) {
-    .grid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media (min-width: 800px) {
-    .grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+    width: 100%; /* Ensure image spans full width */
+    max-width: 100%;
 }
