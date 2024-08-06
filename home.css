@@ -28,6 +28,7 @@ body {
 }
 
 .heading, .second {
+    color: ivory;
     margin: 0;
     font-size: 3rem; /* Adjust font size */
 }
