@@ -4,9 +4,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website with Login and Registration</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
 </head>
 <body>
+    <div class="scene">
+
+        <div class="glass-toggle" id="toggle">
+
+            <!-- Sliding Glass Circle -->
+            <div class="slider">
+                <div class="icon">
+                    <i class="ri-moon-fill moon"></i>
+                    <i class="ri-sun-fill sun"></i>
+                </div>
+            </div>
+
+            <!-- Dark -->
+            <button class="option active" id="darkBtn">
+                <span>Dark</span>
+            </button>
+
+            <!-- Light -->
+            <button class="option" id="lightBtn">
+                <span>Light</span>
+            </button>
+
+        </div>
+
+    </div>
     <div class="home-interface">
         <p class="heading">Tools you</p>
         <p class="second">need all in one place</p>
@@ -396,6 +426,7 @@
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
